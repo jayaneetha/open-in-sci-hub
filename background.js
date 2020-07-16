@@ -18,7 +18,7 @@ chrome.runtime.onInstalled.addListener(function () {
       },
       {
         conditions: [new chrome.declarativeContent.PageStateMatcher({
-          pageUrl: { hostEquals: 'ieeexplore.ieee.org' },
+          pageUrl: { hostEquals: 'www.sciencedirect.com' },
         })
         ],
         actions: [new chrome.declarativeContent.ShowPageAction()]
