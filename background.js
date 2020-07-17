@@ -32,6 +32,22 @@ chrome.runtime.onInstalled.addListener(function () {
         ],
         actions: [new chrome.declarativeContent.ShowPageAction()]
       }
+      ,
+      {
+        conditions: [new chrome.declarativeContent.PageStateMatcher({
+          pageUrl: { hostEquals: 'pubs.acs.org' },
+        })
+        ],
+        actions: [new chrome.declarativeContent.ShowPageAction()]
+      }
+      ,
+      {
+        conditions: [new chrome.declarativeContent.PageStateMatcher({
+          pageUrl: { hostEquals: 'pubs.rsc.org' },
+        })
+        ],
+        actions: [new chrome.declarativeContent.ShowPageAction()]
+      }
 
     ]);
 
