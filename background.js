@@ -15,10 +15,19 @@ chrome.runtime.onInstalled.addListener(function () {
         })
         ],
         actions: [new chrome.declarativeContent.ShowPageAction()]
-      },
+      }
+      ,
       {
         conditions: [new chrome.declarativeContent.PageStateMatcher({
           pageUrl: { hostEquals: 'www.sciencedirect.com' },
+        })
+        ],
+        actions: [new chrome.declarativeContent.ShowPageAction()]
+      }
+      ,
+      {
+        conditions: [new chrome.declarativeContent.PageStateMatcher({
+          pageUrl: { hostEquals: 'link.springer.com' },
         })
         ],
         actions: [new chrome.declarativeContent.ShowPageAction()]
