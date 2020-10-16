@@ -1,6 +1,6 @@
 {
     "name": "Open in Sci-hub",
-    "version": "0.0.1",
+    "version": "1.2",
     "description": "Open Research Papers in Sci-Hub",
     "options_page": "options.html",
     "permissions": [
