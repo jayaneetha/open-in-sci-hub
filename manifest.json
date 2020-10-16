@@ -1,11 +1,13 @@
 {
     "name": "Open in Sci-hub",
-    "version": "1.0",
+    "version": "0.0.1",
     "description": "Open Research Papers in Sci-Hub",
+    "options_page": "options.html",
     "permissions": [
         "tabs",
         "activeTab",
-        "declarativeContent"
+        "declarativeContent",
+        "storage"
     ],
     "background": {
         "scripts": [
